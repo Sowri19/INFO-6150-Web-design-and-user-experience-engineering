@@ -3,9 +3,9 @@ import * as todoController from "./../controllers/todo-controller.js";
 const router = express.Router();
 
 //Defining the router
-router.route("/todoitem").post(todoController.post).get(todoController.all);
+router.route("/todos").post(todoController.post).get(todoController.all);
 router
-  .route("/todoitem/:id")
+  .route("/todos/:id")
   .get(todoController.get)
   .put(todoController.modify)
   .delete(todoController.remove);

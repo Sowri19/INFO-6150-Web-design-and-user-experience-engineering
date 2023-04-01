@@ -1,0 +1,28 @@
+.accordian{
+    .content{
+        // height: 100px;
+        overflow: hidden;
+        transition: 1s;
+        overflow-y: hidden;
+    }
+}
+
+.content b{
+    color:darkblue;
+}
+
+.liElements{
+    display: flex;
+}
+
+input[type='checkbox']{
+    margin-top: 2px;
+    margin-right: 5px;
+
+}
+
+input[type="checkbox"]:checked + h4{
+    font-style: "italic";
+    color: "#cdcdcd";
+    text-decoration: "line-through";
+}

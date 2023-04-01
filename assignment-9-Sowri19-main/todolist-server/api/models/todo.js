@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+let dateandtime = new Date();
 //Creating the Schema
 const Schema = new mongoose.Schema(
   {
@@ -10,13 +11,17 @@ const Schema = new mongoose.Schema(
       type: String,
       required: "title is required",
     },
-    createDate: {
-      type: Date,
-      default: Date.now,
+    dueDate: {
+      type: String,
+      default: dateandtime.toDateString(),
     },
-    lastmodified: {
-      type: Date,
-      default: Date.now,
+    dueTime: {
+      type: String,
+      default: dateandtime.toLocaleTimeString(),
+    },
+    completed: {
+      type: Boolean,
+      default: false,
     },
   },
   { versionKey: false }
