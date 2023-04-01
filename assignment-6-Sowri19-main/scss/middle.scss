@@ -1,0 +1,60 @@
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
+  border-bottom: 1px solid #f1f1f1;
+  &:last-child {
+    border-bottom: 0; //NESTED SELECTORS
+  }
+  // @extend .button;
+}
+
+// .item:last-child {
+//   border-bottom: 0;
+// }
+
+input:checked + details {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  @include form(center);
+  // text-align: center;
+  // margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+#todo_Due-date {
+  border: none;
+}
+#todo_Due-time {
+  @extend #todo_Due-date; //INHERITANCE
+}

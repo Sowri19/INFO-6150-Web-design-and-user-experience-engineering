@@ -1,0 +1,25 @@
+html {
+  background-color: #e4e9fd;
+  // background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  background-image: $cell-color;
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+
+h1 {
+  @include h1(#fff, 10px); //INHERITANCE
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  @include heading(#a683e3, center);
+  // background-color: #a683e3;
+  // text-align: center;
+}

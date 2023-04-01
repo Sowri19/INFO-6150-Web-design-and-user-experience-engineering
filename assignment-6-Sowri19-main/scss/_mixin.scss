@@ -1,0 +1,21 @@
+// TOP OF THE PAGE
+@mixin h1($color, $padding) {
+  color: $color;
+  padding: $padding;
+}
+
+@mixin heading($backgroud-color, $text-align) {
+  background-color: $backgroud-color;
+  text-align: $text-align;
+}
+//MIDDLE OF THE PAGE
+@mixin form($text-align) {
+  text-align: $text-align;
+  //   margin-left: $margin-left;
+}
+//BOTTOM OF THE PAGE
+@mixin footer($color, $colors, $center) {
+  color: $color;
+  color: $colors;
+  text-align: $center;
+}
