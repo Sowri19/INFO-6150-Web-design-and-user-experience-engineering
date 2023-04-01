@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+/* .navbar {
+        margin-left: 500;
+    } */
+
+nav {
+  display: flex;
+  top: 0;
+
+  justify-content: space-around;
+  z-index: 1;
+  /* animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.greenline__logo {
+  /* position: fixed; */
+  left: 20px;
+  object-fit: contain;
+}
+
+.nav__elements {
+  /* position: fixed; */
+  right: 20px;
+  object-fit: contain;
+}

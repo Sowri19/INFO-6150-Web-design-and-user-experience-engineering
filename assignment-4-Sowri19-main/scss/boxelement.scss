@@ -1,0 +1,47 @@
+/* BOX ELEMENT */
+.box_element {
+  @include box_element(
+    250px,
+    200px,
+    50px,
+    20px,
+    white,
+    5px 5px 10px 2px rgba(0, 0, 0, 0.8),
+    25px,
+    grey,
+    all 0.3s ease-in-out
+  );
+  // width: 250px;
+  // height: 200px;
+  // padding: 50px;
+  // margin: 20px;
+  // background-color: white;
+  // box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  // border-radius: 25px;
+  // /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  // color: grey;
+  // transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+//  .box_element:hover {
+//   transform: scale(1.1);
+// }
+.box_element::first-letter {
+  font-size: 36px;
+}
+.box_element::selection {
+  background-color: #2ba88f;
+}
+.offers {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+.material-icons {
+  background-color: #2ba88f;
+  padding: 30px;
+  border-radius: 50%;
+  color: black;
+}

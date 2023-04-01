@@ -1,0 +1,65 @@
+// BANNER
+@mixin banner_button($color) {
+  background-color: $color;
+  border-radius: 25px;
+}
+@mixin absolute($postion) {
+  position: $postion;
+}
+//CAROUSAL
+@mixin carousal__image($carousalimage) {
+  border-radius: $carousalimage;
+}
+@mixin carousal_dollar($color) {
+  color: $color;
+}
+@mixin rating_color($color, $weight, $radius) {
+  background-color: $color;
+  font-weight: $weight;
+  border-radius: $radius;
+  padding: 3px;
+}
+@mixin bluebutton(
+  $backgroud-color,
+  $color,
+  $padding,
+  $border-radius,
+  $transition
+) {
+  background-color: $backgroud-color;
+  color: $color;
+  padding: $padding;
+  border-radius: $border-radius;
+  transition: $transition;
+}
+// BOX ELEMENT
+@mixin box_element(
+  $width,
+  $height,
+  $padding,
+  $margin,
+  $background-color,
+  $box-shadow,
+  $border-radius,
+  $color,
+  $transition
+) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  margin: $margin;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  color: $color;
+  transition: $transition;
+}
+// HELP ELEMENT
+@mixin helpcolor($color, $up: null) {
+  color: $color;
+  @if $up == true {
+    color: black;
+  } @else {
+    color: green;
+  }
+}

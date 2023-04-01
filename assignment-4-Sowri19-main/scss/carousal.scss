@@ -1,0 +1,75 @@
+/* CAROUSAL SLIDE */
+.carousal_slide {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.carousal:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+// EACH LOOP
+$container: (
+  carousal: white,
+);
+
+@each $name, $color in $container {
+  .#{$name} {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+    background-color: $color;
+  }
+}
+.carousal,
+.box_element {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carousal__image {
+  @include carousal__image(15px);
+  // border-radius: 15px;
+}
+
+.carousal_dollar {
+  @include carousal_dollar(#31f0e6);
+  // color: #31f0e6;
+}
+
+[data="rating"] {
+  @include rating_color(greenyellow, bold, 6px);
+  // background-color: greenyellow;
+  // font-weight: bold;
+  // border-radius: 6px;
+}
+[data$="rating"] {
+  @include rating_color(greenyellow, bold, 6px);
+  // background-color: greenyellow;
+  // font-weight: bold;
+  // border-radius: 6px;
+}
+[data*="rating"] {
+  @include rating_color(greenyellow, bold, 6px);
+  // background-color: greenyellow;
+  // font-weight: bold;
+  // border-radius: 6px;
+}
+[data^="rating"] {
+  @include rating_color(greenyellow, bold, 6px);
+  // background-color: greenyellow;
+  // font-weight: bold;
+  // border-radius: 6px;
+}
+.dots_button {
+  text-align: center;
+  padding: 5px;
+}
+.carousal_button {
+  @include bluebutton(#2654a6, white, 10px 50px 10px 50px, 25px, all 0.5s);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// .carousal_button:hover {
+//   transform: scale(1.1);
+// }
